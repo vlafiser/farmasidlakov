@@ -14,10 +14,24 @@
 
 @implementation FirstViewController
 
+// declare LOGO
+- (void) addLogo
+{
+    UIImage *image = [UIImage imageNamed:@"logo.png"];
+    UIImageView *myImageView = [[UIImageView alloc] initWithImage:image];
+    myImageView.frame = CGRectMake(0, 0, 16, 16);
+    myImageView.layer.masksToBounds = YES;
+    myImageView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    myImageView.contentMode = UIViewContentModeScaleAspectFill;
+    self.navigationItem.titleView = myImageView;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    // call LOGO declare
+    [self addLogo];
 }
 
 - (void)didReceiveMemoryWarning

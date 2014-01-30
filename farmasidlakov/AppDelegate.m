@@ -12,7 +12,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // NavigationBar background color: WHITE
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    
+    //[[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"logo.png"] forBarMetrics:UIBarMetricsDefault];
+    
+    /*// NavigationBar title styles (color, font, size)
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
+    shadow.shadowOffset = CGSizeMake(0, 1);
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0],NSForegroundColorAttributeName,shadow, NSShadowAttributeName,[UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:21.0], NSFontAttributeName, nil]];
+     */
+
+    // TabBar background color: WHITE
+    [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
+    
+    // TabBar icon color: GREEN
+    [[UITabBar appearance] setTintColor:[UIColor colorWithRed:50/255.0 green:162/255.0 blue:55/255.0 alpha:1]];
+    
     return YES;
 }
 							

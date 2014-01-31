@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Fyc-zC-9Rz">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--First View Controller - First-->
+        <!--View Controller - First-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
-                <viewController title="First" id="CZ4-MO-1fc" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController title="First" id="CZ4-MO-1fc" sceneMemberID="viewController">
                     <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" id="DxF-3i-wxM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,75 +65,43 @@ Nádherné přírodní scenérie v docházkové blízkosti, lesy, horská jezera
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1085" y="-138"/>
+            <point key="canvasLocation" x="1289" y="-1154"/>
         </scene>
-        <!--View Controller - Kontakt-->
-        <scene sceneID="VY4-zk-D36">
+        <!--View Controller-->
+        <scene sceneID="FN4-m1-5bH">
             <objects>
-                <viewController id="KsG-1Q-eBP" sceneMemberID="viewController">
+                <viewController id="Fyc-zC-9Rz" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3QH-Ht-ZUu"/>
-                        <viewControllerLayoutGuide type="bottom" id="p3P-B2-hZN"/>
+                        <viewControllerLayoutGuide type="top" id="IoH-6C-gTo"/>
+                        <viewControllerLayoutGuide type="bottom" id="vXG-df-hhm"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="SCJ-MB-d67">
+                    <view key="view" contentMode="scaleToFill" id="ec3-89-jP6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXJ-dk-JOx">
+                                <rect key="frame" x="94" y="269" width="132" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Přejít do aplikace...">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8YX-ce-x5E" kind="modal" id="Lrl-WB-eLy"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Kontakt" image="info" id="aeq-hA-cMS">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
-                    </tabBarItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m8b-Qk-lHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iN7-A1-xMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2085" y="192"/>
+            <point key="canvasLocation" x="-124" y="356"/>
         </scene>
-        <!--View Controller - Okolí-->
-        <scene sceneID="GrI-q9-GYg">
-            <objects>
-                <viewController id="izy-8a-gED" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MwB-eA-3eA"/>
-                        <viewControllerLayoutGuide type="bottom" id="1gE-uu-fEK"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8Bx-bA-fhg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Okolí" image="map" id="AU3-nH-ajl">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gIj-eb-lbJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137" y="797"/>
-        </scene>
-        <!--View Controller - Vyfoť se!-->
-        <scene sceneID="sCq-sJ-OPw">
-            <objects>
-                <viewController id="fZG-4Z-tVg" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3Ls-wM-s7F"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ufd-Mc-OD0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5OI-if-UlA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Vyfoť se!" image="camera" id="dal-pj-fWC">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tiR-pP-G7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137" y="-523"/>
-        </scene>
-        <!--Tab Bar Controller-->
+        <!--Klasa-->
         <scene sceneID="Vex-rW-GRa">
             <objects>
-                <tabBarController id="8YX-ce-x5E" sceneMemberID="viewController">
+                <tabBarController id="8YX-ce-x5E" customClass="Klasa" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="o0L-ph-u2b"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
@@ -143,20 +111,21 @@ Nádherné přírodní scenérie v docházkové blízkosti, lesy, horská jezera
                     <connections>
                         <segue destination="ay1-2z-ycv" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
                         <segue destination="5Cu-bL-aSe" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
-                        <segue destination="izy-8a-gED" kind="relationship" relationship="viewControllers" id="Q80-je-8z5"/>
-                        <segue destination="fZG-4Z-tVg" kind="relationship" relationship="viewControllers" id="rnz-uB-Wr7"/>
-                        <segue destination="KsG-1Q-eBP" kind="relationship" relationship="viewControllers" id="vnm-7O-Upd"/>
+                        <segue destination="5yC-xY-JaA" kind="relationship" relationship="viewControllers" id="5Bc-P9-6Cl"/>
+                        <segue destination="JQV-ml-Cos" kind="relationship" relationship="viewControllers" id="KTV-o9-lRa"/>
+                        <segue destination="efc-wx-kYP" kind="relationship" relationship="viewControllers" id="qr3-NE-KFT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-396" y="192"/>
+            <point key="canvasLocation" x="332" y="356"/>
         </scene>
-        <!--Navigation Controller - O Farmě-->
+        <!--Navigation Controller-->
         <scene sceneID="O9w-af-8wK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ay1-2z-ycv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="O Farmě" image="home" id="u1e-5L-l1D">
+                    <tabBarItem key="tabBarItem" title="" image="home" id="u1e-5L-l1D">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -175,14 +144,15 @@ Nádherné přírodní scenérie v docházkové blízkosti, lesy, horská jezera
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qmp-cH-0iP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="-138"/>
+            <point key="canvasLocation" x="857" y="-1154"/>
         </scene>
-        <!--Navigation Controller - Galerie-->
+        <!--Navigation Controller-->
         <scene sceneID="VQ0-vU-Tbd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Cu-bL-aSe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Galerie" image="gallery" id="Z7h-1E-pvt">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    <tabBarItem key="tabBarItem" title="" image="gallery" id="Z7h-1E-pvt">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JMR-kU-Sal">
@@ -196,12 +166,12 @@ Nádherné přírodní scenérie v docházkové blízkosti, lesy, horská jezera
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFf-Mt-o1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="522"/>
+            <point key="canvasLocation" x="857" y="-398"/>
         </scene>
-        <!--First View Controller - First-->
+        <!--View Controller - First-->
         <scene sceneID="5hu-pp-POr">
             <objects>
-                <viewController title="First" id="Lff-G5-CHw" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController title="First" id="Lff-G5-CHw" sceneMemberID="viewController">
                     <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" id="Zxy-Ai-98s">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,7 +214,217 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jaf-iv-mO9" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1093" y="522"/>
+            <point key="canvasLocation" x="1289" y="-398"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JGE-yc-OEc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5yC-xY-JaA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="map" id="5RM-Pe-sZd">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FRo-mM-id7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VVP-FT-o49" kind="relationship" relationship="rootViewController" id="LrI-1R-Qwd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pf0-hE-j7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="356"/>
+        </scene>
+        <!--Prvni Screen - First-->
+        <scene sceneID="xpd-nt-KZX">
+            <objects>
+                <viewController title="First" id="VVP-FT-o49" customClass="PrvniScreen" sceneMemberID="viewController">
+                    <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" id="mX0-yw-h50">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.13333334029999999" green="0.33725491169999999" blue="0.09803922474" alpha="1" colorSpace="deviceRGB"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Já jsem třetí strana!">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" paragraphSpacingBefore="12" firstLineHeadIndent="15" headIndent="15" tailIndent="300" lineHeightMultiple="1.6000000000000001" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                        <tabStops/>
+                                    </paragraphStyle>
+                                </attributes>
+                            </fragment>
+                            <fragment>
+                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="24" name="Verdana"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" paragraphSpacingBefore="12" firstLineHeadIndent="15" headIndent="15" tailIndent="300" lineHeightMultiple="1.6000000000000001" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                        <tabStops/>
+                                    </paragraphStyle>
+                                </attributes>
+                            </fragment>
+                            <fragment content="A sem texty a obsah musíme vymyslet! :)))">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="14" name=".LucidaGrandeUI"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" paragraphSpacingBefore="3" firstLineHeadIndent="15" headIndent="15" tailIndent="300" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                        <tabStops/>
+                                    </paragraphStyle>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <navigationItem key="navigationItem" title="FARMA ŠIDLÁKOV" id="U4s-dY-Nce"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZz-cc-a0P" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1289" y="356"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="72u-g5-pbd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JQV-ml-Cos" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="camera" id="lvj-Zo-FO6">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="goP-eB-S5k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SVA-BO-Out" kind="relationship" relationship="rootViewController" id="2aH-1Z-8yI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qSg-BT-9FJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="1100"/>
+        </scene>
+        <!--View Controller - First-->
+        <scene sceneID="qih-X8-Itx">
+            <objects>
+                <viewController title="First" id="SVA-BO-Out" sceneMemberID="viewController">
+                    <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" id="6WD-Fa-2Tz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.13333334029999999" green="0.33725491169999999" blue="0.09803922474" alpha="1" colorSpace="deviceRGB"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Já jsem čtvrtá strana!">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" paragraphSpacingBefore="12" firstLineHeadIndent="15" headIndent="15" tailIndent="300" lineHeightMultiple="1.6000000000000001" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                        <tabStops/>
+                                    </paragraphStyle>
+                                </attributes>
+                            </fragment>
+                            <fragment>
+                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="24" name="Verdana"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" paragraphSpacingBefore="12" firstLineHeadIndent="15" headIndent="15" tailIndent="300" lineHeightMultiple="1.6000000000000001" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                        <tabStops/>
+                                    </paragraphStyle>
+                                </attributes>
+                            </fragment>
+                            <fragment content="A sem texty a obsah musíme vymyslet! :)))">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="14" name=".LucidaGrandeUI"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" paragraphSpacingBefore="3" firstLineHeadIndent="15" headIndent="15" tailIndent="300" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                        <tabStops/>
+                                    </paragraphStyle>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <navigationItem key="navigationItem" title="FARMA ŠIDLÁKOV" id="gtQ-wx-Uif"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Prw-VL-ici" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1289" y="1100"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QT8-8g-Uww">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="efc-wx-kYP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="info" id="MLd-IA-wbG">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hub-Vi-TPR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="02z-6J-Gz0" kind="relationship" relationship="rootViewController" id="INM-ve-LzW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6IF-4L-19B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="1816"/>
+        </scene>
+        <!--View Controller - First-->
+        <scene sceneID="fHF-AH-O9f">
+            <objects>
+                <viewController title="First" id="02z-6J-Gz0" sceneMemberID="viewController">
+                    <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" id="309-JL-zbN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.13333334029999999" green="0.33725491169999999" blue="0.09803922474" alpha="1" colorSpace="deviceRGB"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Já jsem pátá strana!">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" paragraphSpacingBefore="12" firstLineHeadIndent="15" headIndent="15" tailIndent="300" lineHeightMultiple="1.6000000000000001" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                        <tabStops/>
+                                    </paragraphStyle>
+                                </attributes>
+                            </fragment>
+                            <fragment>
+                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="24" name="Verdana"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" paragraphSpacingBefore="12" firstLineHeadIndent="15" headIndent="15" tailIndent="300" lineHeightMultiple="1.6000000000000001" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                        <tabStops/>
+                                    </paragraphStyle>
+                                </attributes>
+                            </fragment>
+                            <fragment content="A sem texty a obsah musíme vymyslet! :)))">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="14" name=".LucidaGrandeUI"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" paragraphSpacingBefore="3" firstLineHeadIndent="15" headIndent="15" tailIndent="300" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                        <tabStops/>
+                                    </paragraphStyle>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <navigationItem key="navigationItem" title="FARMA ŠIDLÁKOV" id="RP8-Nb-rjN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zTb-af-9Cp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1289" y="1816"/>
         </scene>
     </scenes>
     <resources>

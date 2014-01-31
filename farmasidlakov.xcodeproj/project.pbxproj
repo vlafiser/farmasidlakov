@@ -22,6 +22,8 @@
 		FF26619518998815003074A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF26617418998815003074A6 /* UIKit.framework */; };
 		FF26619D18998815003074A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF26619B18998815003074A6 /* InfoPlist.strings */; };
 		FF26619F18998815003074A6 /* farmasidlakovTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF26619E18998815003074A6 /* farmasidlakovTests.m */; };
+		FF2661AA189B203B003074A6 /* Klasa.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2661A9189B203B003074A6 /* Klasa.m */; };
+		FF2661AD189B2456003074A6 /* PrvniScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2661AC189B2456003074A6 /* PrvniScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		FF26619A18998815003074A6 /* farmasidlakovTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "farmasidlakovTests-Info.plist"; sourceTree = "<group>"; };
 		FF26619C18998815003074A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FF26619E18998815003074A6 /* farmasidlakovTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = farmasidlakovTests.m; sourceTree = "<group>"; };
+		FF2661A8189B203B003074A6 /* Klasa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Klasa.h; sourceTree = "<group>"; };
+		FF2661A9189B203B003074A6 /* Klasa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Klasa.m; sourceTree = "<group>"; };
+		FF2661AB189B2456003074A6 /* PrvniScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrvniScreen.h; sourceTree = "<group>"; };
+		FF2661AC189B2456003074A6 /* PrvniScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrvniScreen.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,10 @@
 				FF26618618998815003074A6 /* FirstViewController.m */,
 				FF26618818998815003074A6 /* SecondViewController.h */,
 				FF26618918998815003074A6 /* SecondViewController.m */,
+				FF2661A8189B203B003074A6 /* Klasa.h */,
+				FF2661A9189B203B003074A6 /* Klasa.m */,
+				FF2661AB189B2456003074A6 /* PrvniScreen.h */,
+				FF2661AC189B2456003074A6 /* PrvniScreen.m */,
 				FF26618B18998815003074A6 /* Images.xcassets */,
 				FF26617718998815003074A6 /* Supporting Files */,
 			);
@@ -257,7 +267,9 @@
 				FF26618A18998815003074A6 /* SecondViewController.m in Sources */,
 				FF26618118998815003074A6 /* AppDelegate.m in Sources */,
 				FF26618718998815003074A6 /* FirstViewController.m in Sources */,
+				FF2661AA189B203B003074A6 /* Klasa.m in Sources */,
 				FF26617D18998815003074A6 /* main.m in Sources */,
+				FF2661AD189B2456003074A6 /* PrvniScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +478,7 @@
 				FF2661A418998815003074A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF2661A518998815003074A6 /* Build configuration list for PBXNativeTarget "farmasidlakovTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +487,7 @@
 				FF2661A718998815003074A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

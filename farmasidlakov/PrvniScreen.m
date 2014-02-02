@@ -26,6 +26,15 @@
     self.navigationItem.titleView = myImageView;
 }
 
+/*
+- (void) addGradient
+{
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:yourImage];
+    [imageView setFrame:yourFrame];
+    [yourTextView addSubview:imageView];
+}
+*/
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -40,6 +49,7 @@
      tabBarItem.image = [UIImage imageNamed:@"1.png"];
      }
      */
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller - First-->
+        <!--Prvni Screen - First-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
-                <viewController title="First" id="CZ4-MO-1fc" sceneMemberID="viewController">
+                <viewController title="First" id="CZ4-MO-1fc" customClass="PrvniScreen" sceneMemberID="viewController">
                     <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" id="DxF-3i-wxM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,7 @@ Nádherné přírodní scenérie v docházkové blízkosti, lesy, horská jezera
                 <tabBarController id="8YX-ce-x5E" customClass="Klasa" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="o0L-ph-u2b"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
+                    <tabBar key="tabBar" contentMode="bottom" id="JQR-rB-NYL">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -168,49 +168,44 @@ Nádherné přírodní scenérie v docházkové blízkosti, lesy, horská jezera
             </objects>
             <point key="canvasLocation" x="857" y="-398"/>
         </scene>
-        <!--View Controller - First-->
+        <!--Prvni Screen - First-->
         <scene sceneID="5hu-pp-POr">
             <objects>
-                <viewController title="First" id="Lff-G5-CHw" sceneMemberID="viewController">
-                    <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" id="Zxy-Ai-98s">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <viewController title="First" id="Lff-G5-CHw" customClass="PrvniScreen" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6l6-Qh-D25"/>
+                        <viewControllerLayoutGuide type="bottom" id="SKb-ic-w2i"/>
+                    </layoutGuides>
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" indicatorStyle="white" id="QAU-ku-88I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.13333334029999999" green="0.33725491169999999" blue="0.09803922474" alpha="1" colorSpace="deviceRGB"/>
-                        <attributedString key="attributedText">
-                            <fragment content="Já jsem druhá strana!">
-                                <attributes>
-                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" paragraphSpacingBefore="12" firstLineHeadIndent="15" headIndent="15" tailIndent="300" lineHeightMultiple="1.6000000000000001" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                        <tabStops/>
-                                    </paragraphStyle>
-                                </attributes>
-                            </fragment>
-                            <fragment>
-                                <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                <attributes>
-                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    <font key="NSFont" size="24" name="Verdana"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" paragraphSpacingBefore="12" firstLineHeadIndent="15" headIndent="15" tailIndent="300" lineHeightMultiple="1.6000000000000001" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                        <tabStops/>
-                                    </paragraphStyle>
-                                </attributes>
-                            </fragment>
-                            <fragment content="A sem texty a obsah musíme vymyslet! :)))">
-                                <attributes>
-                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    <font key="NSFont" size="14" name=".LucidaGrandeUI"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" paragraphSpacingBefore="3" firstLineHeadIndent="15" headIndent="15" tailIndent="300" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                        <tabStops/>
-                                    </paragraphStyle>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                    </textView>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="white" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ved-RJ-tp1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="457"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.12549020350000001" green="0.32941177490000001" blue="0.094117656349999995" alpha="1" colorSpace="deviceRGB"/>
+                                <rect key="contentStretch" x="0.49999999999999994" y="0.0" width="1" height="1"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="15" headIndent="15" tailIndent="297"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="uQw-cj-ew7">
+                                <rect key="frame" x="-8" y="318" width="336" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117656349999995" green="0.5411764979" blue="0.090196080509999998" alpha="1" colorSpace="deviceRGB"/>
+                    </scrollView>
                     <navigationItem key="navigationItem" title="FARMA ŠIDLÁKOV" id="FUj-ww-1Qp"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jaf-iv-mO9" sceneMemberID="firstResponder"/>
             </objects>
@@ -308,10 +303,10 @@ Cg
             </objects>
             <point key="canvasLocation" x="857" y="1100"/>
         </scene>
-        <!--View Controller - First-->
+        <!--Prvni Screen - First-->
         <scene sceneID="qih-X8-Itx">
             <objects>
-                <viewController title="First" id="SVA-BO-Out" sceneMemberID="viewController">
+                <viewController title="First" id="SVA-BO-Out" customClass="PrvniScreen" sceneMemberID="viewController">
                     <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" id="6WD-Fa-2Tz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -378,10 +373,10 @@ Cg
             </objects>
             <point key="canvasLocation" x="857" y="1816"/>
         </scene>
-        <!--View Controller - First-->
+        <!--Prvni Screen - First-->
         <scene sceneID="fHF-AH-O9f">
             <objects>
-                <viewController title="First" id="02z-6J-Gz0" sceneMemberID="viewController">
+                <viewController title="First" id="02z-6J-Gz0" customClass="PrvniScreen" sceneMemberID="viewController">
                     <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" id="309-JL-zbN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -430,6 +425,7 @@ Cg
     <resources>
         <image name="camera" width="25" height="19"/>
         <image name="gallery" width="27" height="22"/>
+        <image name="gradient" width="320" height="84"/>
         <image name="home" width="25" height="25"/>
         <image name="info" width="25" height="25"/>
         <image name="map" width="25" height="25"/>

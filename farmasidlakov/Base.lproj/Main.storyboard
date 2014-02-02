@@ -180,10 +180,14 @@ Nádherné přírodní scenérie v docházkové blízkosti, lesy, horská jezera
                         <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3ow-mo-bI0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="457"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="white" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ved-RJ-tp1">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="457"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.12549020350000001" green="0.32941177490000001" blue="0.094117656349999995" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.12549020350000001" green="0.32941177490000001" blue="0.094117656349999995" alpha="0.0" colorSpace="deviceRGB"/>
                                 <rect key="contentStretch" x="0.49999999999999994" y="0.0" width="1" height="1"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -423,6 +427,7 @@ Cg
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="320" height="455"/>
         <image name="camera" width="25" height="19"/>
         <image name="gallery" width="27" height="22"/>
         <image name="gradient" width="320" height="84"/>
